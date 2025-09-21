@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Amin Sherzad">
+<meta name="dcterms.date" content="2025-09-21">
+
+<title>TUMC Outreach Database System User Manual – tumc-dm-manual</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">tumc-dm-manual</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">TUMC Outreach Database System User Manual</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">kobo</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Amin Sherzad </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 21, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
+  <ul class="collapse">
+  <li><a href="#how-to-log-inout" id="toc-how-to-log-inout" class="nav-link" data-scroll-target="#how-to-log-inout">How to Log-in/out</a></li>
+  <li><a href="#user-roles" id="toc-user-roles" class="nav-link" data-scroll-target="#user-roles">User Roles</a></li>
+  <li><a href="#interface-overview" id="toc-interface-overview" class="nav-link" data-scroll-target="#interface-overview">Interface overview</a>
+  <ul class="collapse">
+  <li><a href="#data-entry-form" id="toc-data-entry-form" class="nav-link" data-scroll-target="#data-entry-form">Data Entry Form</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#task-based-sections" id="toc-task-based-sections" class="nav-link" data-scroll-target="#task-based-sections">Task Based Sections</a>
+  <ul class="collapse">
+  <li><a href="#how-to-find-the-id-of-a-guest" id="toc-how-to-find-the-id-of-a-guest" class="nav-link" data-scroll-target="#how-to-find-the-id-of-a-guest">How to find the ID of a Guest</a></li>
+  <li><a href="#how-to-register-a-guest" id="toc-how-to-register-a-guest" class="nav-link" data-scroll-target="#how-to-register-a-guest">How to register a guest</a></li>
+  <li><a href="#how-to-recordenter-a-distribution" id="toc-how-to-recordenter-a-distribution" class="nav-link" data-scroll-target="#how-to-recordenter-a-distribution">How to record/enter a distribution</a></li>
+  <li><a href="#how-to-make-an-appointment" id="toc-how-to-make-an-appointment" class="nav-link" data-scroll-target="#how-to-make-an-appointment">How to make an appointment</a></li>
+  <li><a href="#how-to-enter-volunteer-availability" id="toc-how-to-enter-volunteer-availability" class="nav-link" data-scroll-target="#how-to-enter-volunteer-availability">How to enter volunteer availability</a></li>
+  <li><a href="#how-to-edit-a-record" id="toc-how-to-edit-a-record" class="nav-link" data-scroll-target="#how-to-edit-a-record">How to edit a record</a></li>
+  <li><a href="#how-to-safely-delete-a-record" id="toc-how-to-safely-delete-a-record" class="nav-link" data-scroll-target="#how-to-safely-delete-a-record">How to safely delete a record</a></li>
+  <li><a href="#how-to-download-data" id="toc-how-to-download-data" class="nav-link" data-scroll-target="#how-to-download-data">How to download data</a></li>
+  <li><a href="#how-to-view-complete-individual-record" id="toc-how-to-view-complete-individual-record" class="nav-link" data-scroll-target="#how-to-view-complete-individual-record">How to view complete individual record</a></li>
+  <li><a href="#how-to-print-esol-name-tags" id="toc-how-to-print-esol-name-tags" class="nav-link" data-scroll-target="#how-to-print-esol-name-tags">How to print ESOL name tags</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting-faqs" id="toc-troubleshooting-faqs" class="nav-link" data-scroll-target="#troubleshooting-faqs">Troubleshooting / FAQs</a>
+  <ul class="collapse">
+  <li><a href="#duplicate-names" id="toc-duplicate-names" class="nav-link" data-scroll-target="#duplicate-names">Duplicate names</a></li>
+  <li><a href="#why-the-booked-time-slots-are-not-blocked" id="toc-why-the-booked-time-slots-are-not-blocked" class="nav-link" data-scroll-target="#why-the-booked-time-slots-are-not-blocked">Why the booked time slots are not blocked</a></li>
+  <li><a href="#why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms" id="toc-why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms" class="nav-link" data-scroll-target="#why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms">Why first name/last name columns are blank in the appointment or distribution forms</a></li>
+  <li><a href="#why-a-registered-guest-is-not-found-in-other-forms" id="toc-why-a-registered-guest-is-not-found-in-other-forms" class="nav-link" data-scroll-target="#why-a-registered-guest-is-not-found-in-other-forms">Why a registered guest is not found in other forms</a></li>
+  <li><a href="#why-i-cant-see-a-formtable" id="toc-why-i-cant-see-a-formtable" class="nav-link" data-scroll-target="#why-i-cant-see-a-formtable">Why I can’t see a form/table</a></li>
+  <li><a href="#why-a-tab-is-disabled" id="toc-why-a-tab-is-disabled" class="nav-link" data-scroll-target="#why-a-tab-is-disabled">Why a tab is disabled</a></li>
+  <li><a href="#what-could-happen-if-i-delete-something" id="toc-what-could-happen-if-i-delete-something" class="nav-link" data-scroll-target="#what-could-happen-if-i-delete-something">What could happen if I delete something</a></li>
+  <li><a href="#record-queued-for-submission" id="toc-record-queued-for-submission" class="nav-link" data-scroll-target="#record-queued-for-submission">Record queued for submission</a></li>
+  <li><a href="#data-protection" id="toc-data-protection" class="nav-link" data-scroll-target="#data-protection">Data Protection</a></li>
+  <li><a href="#account-responsibilities" id="toc-account-responsibilities" class="nav-link" data-scroll-target="#account-responsibilities">Account responsibilities</a></li>
+  <li><a href="#why-guest-not-found" id="toc-why-guest-not-found" class="nav-link" data-scroll-target="#why-guest-not-found">Why Guest not found</a></li>
+  </ul></li>
+  <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
+  <li><a href="#contact-support-info" id="toc-contact-support-info" class="nav-link" data-scroll-target="#contact-support-info">Contact / Support Info</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>This user manual provides guidance on how to use the Trinity United Method Church (TUMC) Outreach Database. This document is only for internal use.</p>
+<p>TUMC Database system provides user interface (UI) to enter data from distributions, distribution appointments, ESOL attendance entry and such into the database and also view those data when needed.</p>
+<p>Outreach team and volunteers - who help with the distribution are the users of this system.</p>
+<p>To access the Database system, you’ll need internet connection, a modern web browser (e.g.&nbsp;Chrome, Safari), and mostly a username/password to log-in.</p>
+</section>
+<section id="getting-started" class="level1">
+<h1>Getting Started</h1>
+<p>In this section we will cover how to log-in, user types/roles, overview of user interface and so on. We have task based (How to…) and Q&amp;A sections too.</p>
+<section id="how-to-log-inout" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-log-inout">How to Log-in/out</h2>
+<ul>
+<li><p>Click on this <a href="https://kf.kobotoolbox.org/accounts/login/">link</a> to redirect you to the right log-in page. There are other variations of this system which seem quite similar, but that link takes you to the right page.</p></li>
+<li><p>Enter your username and password and hit the big blue button</p></li>
+<li><p>The system may log you out when you close your browser page, but to be sure, you can navigate the far top-right corner of your interface, click on the avatar (circle icon), click on the “Logout” button (the last one).</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you forgot your password, it’s recommended to consult with the Admin first. Since all accounts use the same email address for resetting the password, Admin would be able to get it reset.</p>
+</div>
+</div>
+<p>In the log-in page, you have the option to create an account for yourself, but that doesn’t mean you can access the TUMC Outreach data.</p>
+</section>
+<section id="user-roles" class="level2">
+<h2 class="anchored" data-anchor-id="user-roles">User Roles</h2>
+<p>At the time of writing this manual, there are three different user roles/types</p>
+<ol type="1">
+<li>Admin: is a super user and has all the permissions to do anything with the database. If you see you can’t do something, it means that’s restricted for data security purposes.</li>
+<li>Data management user: this type of user can enter, edit and delete records, but can not do project management (e.g.&nbsp;Edna’s account).</li>
+<li>Data entry user: this user is authorized only to enter, edit and view the data/records (e.g.&nbsp;*_entry account)</li>
+</ol>
+</section>
+<section id="interface-overview" class="level2" data-link="Interface overview">
+<h2 data-link="Interface overview" class="anchored" data-anchor-id="interface-overview">Interface overview</h2>
+<p>In this section we explore different parts of the database interface.</p>
+<ul>
+<li><p>After you’ve logged in, on the far top-right corner of the page, you’ll a circle icon, when you click on it, it’ll tell what’s your username and what email your account is bound to. While you can click on the “Account Settings” and change some fields - but it’s not recommended to do it, if you feel something needs to be changed, please consult with Admin.</p>
+<p><img src="images/clipboard-974880624.png" class="img-fluid"></p></li>
+<li><p>On the left side bar you’ll see a few options, but the one you’ll need to use is the “Deployed”. It means deployed projects/forms. When you click on it, it’ll show which forms you have access to. The form names are indicative of what they are for. Click on the one you need to work on. If it happens that you don’t see the “Deployed” option, click on the check-list icon (on the left side of big blue button).</p>
+<p><img src="images/clipboard-619141531.png" class="img-fluid"></p>
+<p>While you’ve access to creating new form (Blue button with “NEW” text on it), but you don’t need to create and it won’t be used. That’s what admin will deal with. The Draft, means drafted projects are there, and same for Archived, archived projects live there - but you don’t need to bother yourself with them :). Admin user can use the “NEW” button to initiate a new project/form, it’ll ask to upload either build or upload a form. For further details, please visit KOBO’s official documentation <a href="https://support.kobotoolbox.org/new_form.html">here</a>.</p></li>
+<li><p>SUMMARY: when you click on a form, it’ll take you to a more busier page where you can see the information about the form, like last time the form was updated, or who owns/control the form, or a graphical summary of data collection. On the right side of the page, there are some buttons, but they are just for easy to access, we will explore them in their own section.</p></li>
+<li><p>FORM: this is where you can open a form to start data entry, update/replace the form or deploy. If you update or deploy the form you should have trained to do so and here’s a <a href="https://support.kobotoolbox.org/welcome.html#developing-forms">link</a> to detailed documentation. For data entry purposes, click on the “Open” button in the lower-right side of the page, it’ll take you to the data entry form. You might be asked to enter your username and password, if so, use your username and password that you used to log-in to the system.</p>
+<p><img src="images/clipboard-2051316910.png" class="img-fluid"></p>
+<p>The data entry form is explained in <a href="#data-entry-form">Data Entry Form</a> section below.</p></li>
+<li><p>DATA: under this tab, you can view and manage (if you’re authorized) the data. Below, we explore each feature in detail:</p>
+<ol type="1">
+<li><p>Table: it’s at the top of the side bar. This is the default view, where you can see the data in a tabular format. There’s a search bar for every column, use that to search for your desired record. There’s also a drop down where you can sort, hide or freeze a column - this might not be visible for all users.</p>
+<p><img src="images/clipboard-4009721166.png" class="img-fluid"></p>
+<ul>
+<li>Check icon: if you see this icon, that’s for bulk edit or delete. Select single or multiple columns and you’ll have some options displayed at the top of the table, where you can edit or delete all the selected rows. There’s a another Check icon at the table header level, if you check that, it’ll apply the action (edit/delete) on all of the records in that page.</li>
+<li>Eye icon: it lets you to view each record individually in a long format with detailed column labels.</li>
+<li>Pen icon: it lets you to edit a record. This might not be visible for all users.</li>
+</ul></li>
+<li><p>Reports: this feature is not useful in our case. But it provides a basic summary stats about the table.</p></li>
+<li><p>Gallery: same as report, not useful in our case. If we’d collect images, this would be helpful.</p></li>
+<li><p>Downloads: this is where you can download the data into different formats such as csv, excel and etc. Some useful options here:</p>
+<p><img src="images/clipboard-1376225784.png" class="img-fluid"></p>
+<ul>
+<li>Export type: choose the format you want to download the data. Excel would be the most useful format in our case.</li>
+<li>Vale and header format: if you want long descriptive labels as column name in downloaded data, so choose “Labels”, the default is short names.</li>
+<li>Under “Advanced options”: most of the time the default option works, but one useful feature is to select specific columns (questions) to be exported. For example you might need only first name and last name wit id, so you can choose only.</li>
+<li>Export: after you have chosen your preference for the downloaded file, click on the “Export” button, it’ll take a few seconds and create your downloadable in the table underneath it.</li>
+<li>Download: lets you download the exported data. If you just exported, your downloadable file is the very top record, so click on the “Download” button and it’ll store it on your computer.</li>
+</ul></li>
+<li><p>Map: since we’re not collecting spatial data (GPS points) this is not useful in our case.</p></li>
+</ol></li>
+<li><p>SETTINGS: this is the project settings, so mostly for admin uses only - and it might be disabled to unauthorized users. Admin can share a project with a user from settings tab or change the existing sharing setting. Other menu items are not covered in this manual, but can be found <a href="https://support.kobotoolbox.org/welcome.html#managing-projects-and-teams">here</a>.</p>
+<p><img src="images/clipboard-2341065329.png" class="img-fluid"></p>
+<ul>
+<li><p>Sharing: this page lets you to share the current form with other users. click on the “Add user” button, it’ll let you to type in the username and assign the permission.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please do not share the projects unless you’re sure of username and confident that you know what you’re doing - you might share the personal information with someone accidentally.</p>
+<p>Also, never give “Delete” or “Manage project” permission to any user other than the admin.</p>
+</div>
+</div></li>
+<li><p>Edit or remove the existing sharing setting: click on the pen icon to update the permission. Or click on the trash icon to remove accessibility for that user for the current project/form.</p></li>
+<li><p>You can allow submissions to the form without username and password. This is not recommended, but if we plan to let self-sign up (specifically for Tuesdays distribution), this will be needed. By switching on the toggle, the form will be accessible by a link to everyone.</p></li>
+<li><p>Also, the form can be shared publicly - which MUST NOT be. But in certain cases you might need to share the form temporarily with someone, so use these options to do so. For example, for printing ESOL name tags, we need turn on the “Anyone can view submissions made to this form” temporarily, but it needs to be turned off right after the print is done.</p></li>
+</ul></li>
+</ul>
+<section id="data-entry-form" class="level3" data-link="Data Entry Form">
+<h3 data-link="Data Entry Form" class="anchored" data-anchor-id="data-entry-form">Data Entry Form</h3>
+<p>Data entry is one of the most used feature if this system. We use it to enter data from distributions, appointments, ESOL attendance and so on. Following, we’ll cover some potential behaviors that might face with:</p>
+<ul>
+<li><p>Login: If it’s your first time doing data entry, you’ll be asked to enter your username and password. use your KOBO username/password to login. If you trust on the device, I’d recommend to save the username and password (if you’re asked to save), so next time you won’t need to log-in again.</p></li>
+<li><p>Unsaved Record Found: If you previously used a form to enter data and left the page without submitting it, you most likely will be asked to either DISCARD or LOAD RECORD. The former one will start a new form. The latter one will reload the previous data and resume data entry where you left off.</p>
+<p><img src="images/clipboard-2155777470.png" class="img-fluid"></p></li>
+<li><p>A new version available: you may see an orange box at the top of the page that notifies about an updated form. If that happens, it’s recommended to refresh the page, and you’ll have the update in the form. Once the forms are stable, this may not happen.</p></li>
+<li><p>Draft/Submit: you’ve the option to save your date temporarily and resume later by clicking on the “Save Draft” button. If you’re done entering the data, click on “Submit” button to submit the data to the database.</p></li>
+<li><p>Offline data collection: this form works perfectly fine collecting data when you don’t have internet, once the internet connection is detected, it’ll submit the saved data by itself.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="task-based-sections" class="level1">
+<h1>Task Based Sections</h1>
+<section id="how-to-find-the-id-of-a-guest" class="level2" data-link="How to find the ID of a Guest">
+<h2 data-link="How to find the ID of a Guest" class="anchored" data-anchor-id="how-to-find-the-id-of-a-guest">How to find the ID of a Guest</h2>
+<p>Steps:</p>
+<ol type="1">
+<li>Navigate to the Guest Registration form, click on the DATA tab</li>
+<li>Type in the name or last of the guest in the guest_fname, guest_lname search box respectively</li>
+<li>You might get multiple guest, but choose the one you want</li>
+<li>Double click/tap on the Guest ID column and copy it</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type in the name/last name quickly, the table view starts filtering after a second pause</p>
+</div>
+</div>
+<p><img src="images/clipboard-2184439715.png" class="img-fluid"></p>
+</section>
+<section id="how-to-register-a-guest" class="level2" data-link="How to register a guest">
+<h2 data-link="How to register a guest" class="anchored" data-anchor-id="how-to-register-a-guest">How to register a guest</h2>
+<p>After you’ve logged in</p>
+<ol type="1">
+<li>click on the “Deployed” button on the left side bar</li>
+<li>Click on “Guest Registration Form”</li>
+<li>Click on the “FROM” tab located on the top menu</li>
+<li>Click on the “Open” button on the right side of the second section of the page</li>
+<li>For full details check out <a href="#interface-overview">Interface overview</a>, FORM bullet point</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since you’re already here, click on this <a href="https://ee.kobotoolbox.org/x/ynY5ikir">link</a> and it’ll take you to the data entry form</p>
+</div>
+</div>
+</section>
+<section id="how-to-recordenter-a-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-recordenter-a-distribution">How to record/enter a distribution</h2>
+<p>Same as <a href="#how-to-register-a-guest">How to register a guest</a> section, just in the second item, click on the “Distribution Form”.</p>
+<p>You need to start the entry by entering the Guest ID. If the guest doesn’t know their ID, you need to go to the Guest Registration Form and find their ID by searching their name or last name. See <a href="#how-to-find-the-id-of-a-guest">How to find the ID of a Guest</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://ee.kobotoolbox.org/x/ftpCkuNw">Quick link to the form</a></p>
+</div>
+</div>
+</section>
+<section id="how-to-make-an-appointment" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-make-an-appointment">How to make an appointment</h2>
+<p>Same as <a href="#how-to-register-a-guest">How to register a guest</a> section, just in the second item, click on the “Appointments Form”.</p>
+<p>You need to start the entry by entering the Guest ID. If the guest doesn’t know their ID, you need to go to the Guest Registration Form and find their ID by searching their name or last name. See <a href="#how-to-find-the-id-of-a-guest">How to find the ID of a Guest</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://ee.kobotoolbox.org/x/fSf7v4Bh">Quick link to the form</a></p>
+</div>
+</div>
+</section>
+<section id="how-to-enter-volunteer-availability" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-enter-volunteer-availability">How to enter volunteer availability</h2>
+<p>Same as <a href="#how-to-register-a-guest">How to register a guest</a> section, just in the second item, click on the “Volunteers Availability Form”. Please keep the following in mind:</p>
+<ul>
+<li><p>You need to use the same email address as the one you used for volunteer registration</p></li>
+<li><p>You won’t be able to have overlapping shift. For example, if you signed up for Thursday Market (10:00-2:00) from 08/01/2025 to 08/15/2025, you may not be able to record another availability at the same shift between those dates. The system should notify these type of conflicts.</p></li>
+<li><p>Reach out to admin if you need to update any information or availability</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://ee.kobotoolbox.org/x/mE3yHbzi">Quick link to the form</a></p>
+</div>
+</div>
+</section>
+<section id="how-to-edit-a-record" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-edit-a-record">How to edit a record</h2>
+<p>If you need edit a record, make sure the account you’re using has the right permission to edit. You can edit in two different ways:</p>
+<ol type="1">
+<li><p>Individual record - all fields: Go to the desired form, click on the DATA tab, in the table view, every record has a pen icon in the first column, click on it, it’ll take you to a new window where you can edit any field for the selected row, and submit the update.</p>
+<p><img src="images/clipboard-1904134040.png" class="img-fluid" width="445"></p></li>
+<li><p>Multiple records - one field at a time (you may rarely need to edit this way): Go to the desired form, click on the DATA tab, in the table view, each record has check box in the first column, find your target records and then:</p>
+<ol type="1">
+<li><p>Check those records you want to edit, once you check, edit option will appear at the top of the table</p>
+<p><img src="images/clipboard-3672585776.png" class="img-fluid" width="451"></p></li>
+<li><p>Click on the “Edit” button at the top of the table, it’ll take you to a new window where you can choose what field to edit, choose desired field by clicking on the “Edit” button in this window</p>
+<p><img src="images/clipboard-2294304093.png" class="img-fluid" width="447"></p></li>
+<li><p>Now, you’ll be in a different window, where you have an open field to enter new response for the selected rows and click “Save” to save your changes</p>
+<p><img src="images/clipboard-407419836.png" class="img-fluid" width="455"></p></li>
+</ol></li>
+</ol>
+<p>Please keep in mind that the second option (Multiple record edit) will update all those selected rows - so make sure you’re selecting the right rows and doing it purposefully.</p>
+</section>
+<section id="how-to-safely-delete-a-record" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-safely-delete-a-record">How to safely delete a record</h2>
+<p>Delete permission is granted only for certain users, when you need to delete a record, first make sure your account has that permission. Note that the delete action IS NOT REVERSABLE! Go to DATA tab, in the table view, find your target record and check the check box, this will make the “Delete” button appear at the top of the table, once you’re sure you’ve checked the right rows, then hit the “Delete” button, it’ll ask you to confirm that you intentionally delete rows, confirm and it’ll be done.</p>
+<p><img src="images/clipboard-1373777065.png" class="img-fluid" width="453"></p>
+</section>
+<section id="how-to-download-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-download-data">How to download data</h2>
+<p>Choose the right project (e.g.&nbsp;Guest, Distribution, etc.) then click on the DATA tab, then on the left panel, click on the Downloads, then click Export - it’ll generate a downloadable file in the table below it, then click on the Download button. You should have the data into you Downloads folder.</p>
+<p><img src="images/clipboard-1047436413.png" class="img-fluid"></p>
+<p>For more details, please read <a href="#interface-overview">Interface overview</a>, DATA bullet.</p>
+<p>Read <a href="#data-protection">Data Protection</a> policy on how to keep the data and account safe.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you’re downloading the data into your personal device, we highly recommend to remove the entire data when you’re finished working with it, or at least remove the personal identifiable columns.</p>
+</div>
+</div>
+</section>
+<section id="how-to-view-complete-individual-record" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-view-complete-individual-record">How to view complete individual record</h2>
+<p>Beside looking at the data in wide (row-wise) format, you can look at each individual record in long-wide format too. Go to DATA tab, in the table view, first column, there is eye icon for each row, click on it and you’ll be taken into a new window where you can see the details of a record completely in long-wide format. This is particularly helpful if you want to know the label of each column.</p>
+<p><img src="images/clipboard-3974637702.png" class="img-fluid" width="516"></p>
+</section>
+<section id="how-to-print-esol-name-tags" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-print-esol-name-tags">How to print ESOL name tags</h2>
+<p>The ESOL name tag list comes from Guest Table, to ease the processing of printing, we first pull the ESOL list into a Google sheet, clean up and create the QR code - this is automated process. But the only thing needs to be done is sharing the data with that Google sheet. You need to take the following steps:</p>
+<ol type="1">
+<li><p>Go to Guest Registration Form, click on the <a href="https://kf.kobotoolbox.org/#/forms/aH9cBXAoBSbiiJnSmQJcJJ/settings/sharing">SETTINGS</a> tab</p></li>
+<li><p>Click on the “Sharing” link on the left side bar</p></li>
+<li><p>Navigate to the “Share publicly by link”</p></li>
+<li><p>Check the “Anyone can view submissions made to this form”</p>
+<p><img src="images/clipboard-1730704828.png" class="img-fluid" width="557"></p></li>
+<li><p>Navigate to the <a href="https://docs.google.com/spreadsheets/d/1SpBYpB9bjWgcHMJzSbzTn_XBdLdIIPQvIUtTP3c0cFY/edit?gid=1234887157#gid=1234887157">Google sheet</a>. This link won’t work if the file is not already shared with you</p></li>
+<li><p>Navigate to the “Pull Data” tab (if you’re not there already)</p></li>
+<li><p>Remove the content of cell “A1”</p></li>
+<li><p>Hit Control/Cmd + Z, or click on Undo icon, or click on Undo under Edit menu, (this will refresh the page and pulls data from KOBO)</p></li>
+<li><p>Navigate to “Name tags to Print” and print it</p>
+<p><img src="images/clipboard-3840592413.png" class="img-fluid" width="369"></p></li>
+<li><p>MUST DO! Once the list is printed, you MUST reverse the permission - uncheck the “Anyone can view this form” (this will uncheck the next option too). IF YOU FORGET TO DO THIS - THE DATA WILL BE PUBLICLY ACCESSIBLE.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you see SETTINGS tab is disabled, it means you don’t have the permission - Reach out to Admin.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="troubleshooting-faqs" class="level1">
+<h1>Troubleshooting / FAQs</h1>
+<section id="duplicate-names" class="level2">
+<h2 class="anchored" data-anchor-id="duplicate-names">Duplicate names</h2>
+<p>There’s chance we’ve duplicate records (by first and last names), but their IDs won’t be the same. If you need to grab a guest with such duplicate issue, it’s recommended to use the ID of the record that has the most data (e.g.&nbsp;their household size is available, or their address is complete)</p>
+</section>
+<section id="why-the-booked-time-slots-are-not-blocked" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-booked-time-slots-are-not-blocked">Why the booked time slots are not blocked</h2>
+<p>The system has a 5 minutes delay to access the data after it’s entered. If you just entered an appointment and the system doesn’t show it on the corresponding time slot, you may check back in 5 minutes, also you have to update/refresh your page too to see the update.</p>
+</section>
+<section id="why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms" class="level2">
+<h2 class="anchored" data-anchor-id="why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms">Why first name/last name columns are blank in the appointment or distribution forms</h2>
+<p>Same as above; if you registered a guest in less than 5 minutes ago, and now trying to make an appointment or record a distribution for them, you won’t see their name pops up, and the name columns will be empty in the resulting form. There two ways to fix it:</p>
+<ol type="1">
+<li>If you just registered a guest, wait at least 5 minutes to schedule an appointment or record a distribution for that guest (after 5 minutes, you’ll have to refresh your page to get the get new guest data loaded)</li>
+<li>If it’s a distribution, go to the guest table and note down the guest ID, then record a distribution by entering that noted guest ID and submit the form - you’ll see a reminder that says “Guest not found …” you can ignore that if you’re sure about guest ID. It’ll insert a record without those information, but later you can edit that form (by clicking on the pen icon in the table view), it’ll pull those information and update it.</li>
+</ol>
+</section>
+<section id="why-a-registered-guest-is-not-found-in-other-forms" class="level2">
+<h2 class="anchored" data-anchor-id="why-a-registered-guest-is-not-found-in-other-forms">Why a registered guest is not found in other forms</h2>
+<p>There’s a 5 minutes delay the newly entered data to become accessible throughout other forms. If you just registered a guest, and you can find it in the Guest Table, but their ID doesn’t get recognized in the other forms (e.g.&nbsp;Distribution, Appointments), you need to give the system at least 5 minutes to load that data - and also, need to refresh your page after 5 minutes.</p>
+</section>
+<section id="why-i-cant-see-a-formtable" class="level2">
+<h2 class="anchored" data-anchor-id="why-i-cant-see-a-formtable">Why I can’t see a form/table</h2>
+<p>If you don’t see a table, form or project, it could be because of any of the following reasons:</p>
+<ul>
+<li><p>The project is not shared with you</p></li>
+<li><p>You’re not logged in - especially if you see a “Login” button on the top left side of your page. Database system may log you out after sometime with no activity</p></li>
+<li><p>Make sure you’re logged in with right user account/username</p></li>
+<li><p>Follow the instructions in <a href="#interface-overview">Interface overview</a> section</p></li>
+</ul>
+</section>
+<section id="why-a-tab-is-disabled" class="level2">
+<h2 class="anchored" data-anchor-id="why-a-tab-is-disabled">Why a tab is disabled</h2>
+<p>If a tab (e.g.&nbsp;SETTINGS) shows as disabled (un-clickable), it means you don’t have the permission to access the content under that tab. Make sure you’re logged in with the right user account. Reach out to Admin if the issue is something else.</p>
+</section>
+<section id="what-could-happen-if-i-delete-something" class="level2">
+<h2 class="anchored" data-anchor-id="what-could-happen-if-i-delete-something">What could happen if I delete something</h2>
+<ol type="1">
+<li>Deleting a record: Unfortunately, delete action is not reversible in this system. So please put extra care when you want to delete something. Even if you’ve the permission to delete, it’s recommended to ask Admin to do it.</li>
+<li>Deleting a form: …</li>
+</ol>
+</section>
+<section id="record-queued-for-submission" class="level2">
+<h2 class="anchored" data-anchor-id="record-queued-for-submission">Record queued for submission</h2>
+<p>When you do data entry, it may happen to see messages like “Record queued for submission”. That means the form is working and capturing your data but due internet connection issue it can’t submit but queue instead, once the connection is available, it’ll send them to the database. There’s nothing to worry about this.</p>
+</section>
+<section id="data-protection" class="level2" data-link="Data Protection">
+<h2 data-link="Data Protection" class="anchored" data-anchor-id="data-protection">Data Protection</h2>
+<p>This database contains personal identifiable information, whoever granted access must be cautious keeping the credentials safe and avoid downloading the data into their private devices. We do not recommend saving the username/password in personal devices. Please communicate immediately with Outreach Leadership if you feel log-in username/password is leaked.</p>
+</section>
+<section id="account-responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="account-responsibilities">Account responsibilities</h2>
+<p>To maintain data security and accessibility, we’ve multiple kobo accounts with different accessibility levels. If you’re given a username/password to log-in, you’re responsible keeping it safe. Some account may not be able to delete a record, but still able to download and view identifiable information, so please put extra attention keeping the account credentials safe.</p>
+</section>
+<section id="why-guest-not-found" class="level2">
+<h2 class="anchored" data-anchor-id="why-guest-not-found">Why Guest not found</h2>
+<p>There could be multiple issues:</p>
+<ul>
+<li><p>Make sure Guest is registered in the Guest table and you’re able to find them there</p></li>
+<li><p>If you can find Guest in the Guest table, but they system can’t pull their information in the other forms like Distribution or Appointments, there could be a few issues:</p>
+<ol type="1">
+<li><p>Whether you just registered the Guest, and the system needs 5 minutes to sync up</p></li>
+<li><p>If you’re sure 5 minutes is already over, then you need to refresh you browser page</p></li>
+<li><p>If non of above, make sure the ID field doesn’t contain any space either before or after the ID</p></li>
+</ol></li>
+</ul>
+</section>
+</section>
+<section id="glossary" class="level1">
+<h1>Glossary</h1>
+<ul>
+<li><p>KOBO: The Database system name</p></li>
+<li><p>Project: all features (form, table, summary and etc.) belonging to a specific schema like Guest, Distribution.</p></li>
+<li><p>Admin: who maintains the database</p></li>
+</ul>
+</section>
+<section id="contact-support-info" class="level1">
+<h1>Contact / Support Info</h1>
+<ul>
+<li><p>Mary Liz - Outreach Director, Forever Admin :)</p>
+<ul>
+<li><p>Email:</p></li>
+<li><p>Phone:</p></li>
+</ul></li>
+<li><p>Edna - Position</p>
+<ul>
+<li><p>Email:</p></li>
+<li><p>Phone:</p></li>
+</ul></li>
+<li><p>Jen - Position</p>
+<ul>
+<li><p>Email:</p></li>
+<li><p>Phone:</p></li>
+</ul></li>
+<li><p>Amin - Developer, Temporary Admin:</p>
+<ul>
+<li>Email:</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

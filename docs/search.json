@@ -7,24 +7,185 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/kobo-user-guide/index.html",
+    "href": "posts/kobo-user-guide/index.html",
+    "title": "TUMC Outreach Database System User Manual",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This user manual provides guidance on how to use the Trinity United Method Church (TUMC) Outreach Database. This document is only for internal use.\nTUMC Database system provides user interface (UI) to enter data from distributions, distribution appointments, ESOL attendance entry and such into the database and also view those data when needed.\nOutreach team and volunteers - who help with the distribution are the users of this system.\nTo access the Database system, you’ll need internet connection, a modern web browser (e.g. Chrome, Safari), and mostly a username/password to log-in."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "objectID": "posts/kobo-user-guide/index.html#how-to-log-inout",
+    "href": "posts/kobo-user-guide/index.html#how-to-log-inout",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to Log-in/out",
+    "text": "How to Log-in/out\n\nClick on this link to redirect you to the right log-in page. There are other variations of this system which seem quite similar, but that link takes you to the right page.\nEnter your username and password and hit the big blue button\nThe system may log you out when you close your browser page, but to be sure, you can navigate the far top-right corner of your interface, click on the avatar (circle icon), click on the “Logout” button (the last one).\n\n\n\n\n\n\n\nTip\n\n\n\nIf you forgot your password, it’s recommended to consult with the Admin first. Since all accounts use the same email address for resetting the password, Admin would be able to get it reset.\n\n\nIn the log-in page, you have the option to create an account for yourself, but that doesn’t mean you can access the TUMC Outreach data."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#user-roles",
+    "href": "posts/kobo-user-guide/index.html#user-roles",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "User Roles",
+    "text": "User Roles\nAt the time of writing this manual, there are three different user roles/types\n\nAdmin: is a super user and has all the permissions to do anything with the database. If you see you can’t do something, it means that’s restricted for data security purposes.\nData management user: this type of user can enter, edit and delete records, but can not do project management (e.g. Edna’s account).\nData entry user: this user is authorized only to enter, edit and view the data/records (e.g. *_entry account)"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#interface-overview",
+    "href": "posts/kobo-user-guide/index.html#interface-overview",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Interface overview",
+    "text": "Interface overview\nIn this section we explore different parts of the database interface.\n\nAfter you’ve logged in, on the far top-right corner of the page, you’ll a circle icon, when you click on it, it’ll tell what’s your username and what email your account is bound to. While you can click on the “Account Settings” and change some fields - but it’s not recommended to do it, if you feel something needs to be changed, please consult with Admin.\n\nOn the left side bar you’ll see a few options, but the one you’ll need to use is the “Deployed”. It means deployed projects/forms. When you click on it, it’ll show which forms you have access to. The form names are indicative of what they are for. Click on the one you need to work on. If it happens that you don’t see the “Deployed” option, click on the check-list icon (on the left side of big blue button).\n\nWhile you’ve access to creating new form (Blue button with “NEW” text on it), but you don’t need to create and it won’t be used. That’s what admin will deal with. The Draft, means drafted projects are there, and same for Archived, archived projects live there - but you don’t need to bother yourself with them :). Admin user can use the “NEW” button to initiate a new project/form, it’ll ask to upload either build or upload a form. For further details, please visit KOBO’s official documentation here.\nSUMMARY: when you click on a form, it’ll take you to a more busier page where you can see the information about the form, like last time the form was updated, or who owns/control the form, or a graphical summary of data collection. On the right side of the page, there are some buttons, but they are just for easy to access, we will explore them in their own section.\nFORM: this is where you can open a form to start data entry, update/replace the form or deploy. If you update or deploy the form you should have trained to do so and here’s a link to detailed documentation. For data entry purposes, click on the “Open” button in the lower-right side of the page, it’ll take you to the data entry form. You might be asked to enter your username and password, if so, use your username and password that you used to log-in to the system.\n\nThe data entry form is explained in Data Entry Form section below.\nDATA: under this tab, you can view and manage (if you’re authorized) the data. Below, we explore each feature in detail:\n\nTable: it’s at the top of the side bar. This is the default view, where you can see the data in a tabular format. There’s a search bar for every column, use that to search for your desired record. There’s also a drop down where you can sort, hide or freeze a column - this might not be visible for all users.\n\n\nCheck icon: if you see this icon, that’s for bulk edit or delete. Select single or multiple columns and you’ll have some options displayed at the top of the table, where you can edit or delete all the selected rows. There’s a another Check icon at the table header level, if you check that, it’ll apply the action (edit/delete) on all of the records in that page.\nEye icon: it lets you to view each record individually in a long format with detailed column labels.\nPen icon: it lets you to edit a record. This might not be visible for all users.\n\nReports: this feature is not useful in our case. But it provides a basic summary stats about the table.\nGallery: same as report, not useful in our case. If we’d collect images, this would be helpful.\nDownloads: this is where you can download the data into different formats such as csv, excel and etc. Some useful options here:\n\n\nExport type: choose the format you want to download the data. Excel would be the most useful format in our case.\nVale and header format: if you want long descriptive labels as column name in downloaded data, so choose “Labels”, the default is short names.\nUnder “Advanced options”: most of the time the default option works, but one useful feature is to select specific columns (questions) to be exported. For example you might need only first name and last name wit id, so you can choose only.\nExport: after you have chosen your preference for the downloaded file, click on the “Export” button, it’ll take a few seconds and create your downloadable in the table underneath it.\nDownload: lets you download the exported data. If you just exported, your downloadable file is the very top record, so click on the “Download” button and it’ll store it on your computer.\n\nMap: since we’re not collecting spatial data (GPS points) this is not useful in our case.\n\nSETTINGS: this is the project settings, so mostly for admin uses only - and it might be disabled to unauthorized users. Admin can share a project with a user from settings tab or change the existing sharing setting. Other menu items are not covered in this manual, but can be found here.\n\n\nSharing: this page lets you to share the current form with other users. click on the “Add user” button, it’ll let you to type in the username and assign the permission.\n\n\n\n\n\n\nWarning\n\n\n\nPlease do not share the projects unless you’re sure of username and confident that you know what you’re doing - you might share the personal information with someone accidentally.\nAlso, never give “Delete” or “Manage project” permission to any user other than the admin.\n\n\nEdit or remove the existing sharing setting: click on the pen icon to update the permission. Or click on the trash icon to remove accessibility for that user for the current project/form.\nYou can allow submissions to the form without username and password. This is not recommended, but if we plan to let self-sign up (specifically for Tuesdays distribution), this will be needed. By switching on the toggle, the form will be accessible by a link to everyone.\nAlso, the form can be shared publicly - which MUST NOT be. But in certain cases you might need to share the form temporarily with someone, so use these options to do so. For example, for printing ESOL name tags, we need turn on the “Anyone can view submissions made to this form” temporarily, but it needs to be turned off right after the print is done.\n\n\n\nData Entry Form\nData entry is one of the most used feature if this system. We use it to enter data from distributions, appointments, ESOL attendance and so on. Following, we’ll cover some potential behaviors that might face with:\n\nLogin: If it’s your first time doing data entry, you’ll be asked to enter your username and password. use your KOBO username/password to login. If you trust on the device, I’d recommend to save the username and password (if you’re asked to save), so next time you won’t need to log-in again.\nUnsaved Record Found: If you previously used a form to enter data and left the page without submitting it, you most likely will be asked to either DISCARD or LOAD RECORD. The former one will start a new form. The latter one will reload the previous data and resume data entry where you left off.\n\nA new version available: you may see an orange box at the top of the page that notifies about an updated form. If that happens, it’s recommended to refresh the page, and you’ll have the update in the form. Once the forms are stable, this may not happen.\nDraft/Submit: you’ve the option to save your date temporarily and resume later by clicking on the “Save Draft” button. If you’re done entering the data, click on “Submit” button to submit the data to the database.\nOffline data collection: this form works perfectly fine collecting data when you don’t have internet, once the internet connection is detected, it’ll submit the saved data by itself."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-find-the-id-of-a-guest",
+    "href": "posts/kobo-user-guide/index.html#how-to-find-the-id-of-a-guest",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to find the ID of a Guest",
+    "text": "How to find the ID of a Guest\nSteps:\n\nNavigate to the Guest Registration form, click on the DATA tab\nType in the name or last of the guest in the guest_fname, guest_lname search box respectively\nYou might get multiple guest, but choose the one you want\nDouble click/tap on the Guest ID column and copy it\n\n\n\n\n\n\n\nTip\n\n\n\nType in the name/last name quickly, the table view starts filtering after a second pause"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-register-a-guest",
+    "href": "posts/kobo-user-guide/index.html#how-to-register-a-guest",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to register a guest",
+    "text": "How to register a guest\nAfter you’ve logged in\n\nclick on the “Deployed” button on the left side bar\nClick on “Guest Registration Form”\nClick on the “FROM” tab located on the top menu\nClick on the “Open” button on the right side of the second section of the page\nFor full details check out Interface overview, FORM bullet point\n\n\n\n\n\n\n\nTip\n\n\n\nSince you’re already here, click on this link and it’ll take you to the data entry form"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-recordenter-a-distribution",
+    "href": "posts/kobo-user-guide/index.html#how-to-recordenter-a-distribution",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to record/enter a distribution",
+    "text": "How to record/enter a distribution\nSame as How to register a guest section, just in the second item, click on the “Distribution Form”.\nYou need to start the entry by entering the Guest ID. If the guest doesn’t know their ID, you need to go to the Guest Registration Form and find their ID by searching their name or last name. See How to find the ID of a Guest.\n\n\n\n\n\n\nTip\n\n\n\nQuick link to the form"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-make-an-appointment",
+    "href": "posts/kobo-user-guide/index.html#how-to-make-an-appointment",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to make an appointment",
+    "text": "How to make an appointment\nSame as How to register a guest section, just in the second item, click on the “Appointments Form”.\nYou need to start the entry by entering the Guest ID. If the guest doesn’t know their ID, you need to go to the Guest Registration Form and find their ID by searching their name or last name. See How to find the ID of a Guest.\n\n\n\n\n\n\nTip\n\n\n\nQuick link to the form"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-enter-volunteer-availability",
+    "href": "posts/kobo-user-guide/index.html#how-to-enter-volunteer-availability",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to enter volunteer availability",
+    "text": "How to enter volunteer availability\nSame as How to register a guest section, just in the second item, click on the “Volunteers Availability Form”. Please keep the following in mind:\n\nYou need to use the same email address as the one you used for volunteer registration\nYou won’t be able to have overlapping shift. For example, if you signed up for Thursday Market (10:00-2:00) from 08/01/2025 to 08/15/2025, you may not be able to record another availability at the same shift between those dates. The system should notify these type of conflicts.\nReach out to admin if you need to update any information or availability\n\n\n\n\n\n\n\nTip\n\n\n\nQuick link to the form"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-edit-a-record",
+    "href": "posts/kobo-user-guide/index.html#how-to-edit-a-record",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to edit a record",
+    "text": "How to edit a record\nIf you need edit a record, make sure the account you’re using has the right permission to edit. You can edit in two different ways:\n\nIndividual record - all fields: Go to the desired form, click on the DATA tab, in the table view, every record has a pen icon in the first column, click on it, it’ll take you to a new window where you can edit any field for the selected row, and submit the update.\n\nMultiple records - one field at a time (you may rarely need to edit this way): Go to the desired form, click on the DATA tab, in the table view, each record has check box in the first column, find your target records and then:\n\nCheck those records you want to edit, once you check, edit option will appear at the top of the table\n\nClick on the “Edit” button at the top of the table, it’ll take you to a new window where you can choose what field to edit, choose desired field by clicking on the “Edit” button in this window\n\nNow, you’ll be in a different window, where you have an open field to enter new response for the selected rows and click “Save” to save your changes\n\n\n\nPlease keep in mind that the second option (Multiple record edit) will update all those selected rows - so make sure you’re selecting the right rows and doing it purposefully."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-safely-delete-a-record",
+    "href": "posts/kobo-user-guide/index.html#how-to-safely-delete-a-record",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to safely delete a record",
+    "text": "How to safely delete a record\nDelete permission is granted only for certain users, when you need to delete a record, first make sure your account has that permission. Note that the delete action IS NOT REVERSABLE! Go to DATA tab, in the table view, find your target record and check the check box, this will make the “Delete” button appear at the top of the table, once you’re sure you’ve checked the right rows, then hit the “Delete” button, it’ll ask you to confirm that you intentionally delete rows, confirm and it’ll be done."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-download-data",
+    "href": "posts/kobo-user-guide/index.html#how-to-download-data",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to download data",
+    "text": "How to download data\nChoose the right project (e.g. Guest, Distribution, etc.) then click on the DATA tab, then on the left panel, click on the Downloads, then click Export - it’ll generate a downloadable file in the table below it, then click on the Download button. You should have the data into you Downloads folder.\n\nFor more details, please read Interface overview, DATA bullet.\nRead Data Protection policy on how to keep the data and account safe.\n\n\n\n\n\n\nImportant\n\n\n\nIf you’re downloading the data into your personal device, we highly recommend to remove the entire data when you’re finished working with it, or at least remove the personal identifiable columns."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-view-complete-individual-record",
+    "href": "posts/kobo-user-guide/index.html#how-to-view-complete-individual-record",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to view complete individual record",
+    "text": "How to view complete individual record\nBeside looking at the data in wide (row-wise) format, you can look at each individual record in long-wide format too. Go to DATA tab, in the table view, first column, there is eye icon for each row, click on it and you’ll be taken into a new window where you can see the details of a record completely in long-wide format. This is particularly helpful if you want to know the label of each column."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#how-to-print-esol-name-tags",
+    "href": "posts/kobo-user-guide/index.html#how-to-print-esol-name-tags",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "How to print ESOL name tags",
+    "text": "How to print ESOL name tags\nThe ESOL name tag list comes from Guest Table, to ease the processing of printing, we first pull the ESOL list into a Google sheet, clean up and create the QR code - this is automated process. But the only thing needs to be done is sharing the data with that Google sheet. You need to take the following steps:\n\nGo to Guest Registration Form, click on the SETTINGS tab\nClick on the “Sharing” link on the left side bar\nNavigate to the “Share publicly by link”\nCheck the “Anyone can view submissions made to this form”\n\nNavigate to the Google sheet. This link won’t work if the file is not already shared with you\nNavigate to the “Pull Data” tab (if you’re not there already)\nRemove the content of cell “A1”\nHit Control/Cmd + Z, or click on Undo icon, or click on Undo under Edit menu, (this will refresh the page and pulls data from KOBO)\nNavigate to “Name tags to Print” and print it\n\nMUST DO! Once the list is printed, you MUST reverse the permission - uncheck the “Anyone can view this form” (this will uncheck the next option too). IF YOU FORGET TO DO THIS - THE DATA WILL BE PUBLICLY ACCESSIBLE.\n\n\n\n\n\n\n\nTip\n\n\n\nIf you see SETTINGS tab is disabled, it means you don’t have the permission - Reach out to Admin."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#duplicate-names",
+    "href": "posts/kobo-user-guide/index.html#duplicate-names",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Duplicate names",
+    "text": "Duplicate names\nThere’s chance we’ve duplicate records (by first and last names), but their IDs won’t be the same. If you need to grab a guest with such duplicate issue, it’s recommended to use the ID of the record that has the most data (e.g. their household size is available, or their address is complete)"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#why-the-booked-time-slots-are-not-blocked",
+    "href": "posts/kobo-user-guide/index.html#why-the-booked-time-slots-are-not-blocked",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Why the booked time slots are not blocked",
+    "text": "Why the booked time slots are not blocked\nThe system has a 5 minutes delay to access the data after it’s entered. If you just entered an appointment and the system doesn’t show it on the corresponding time slot, you may check back in 5 minutes, also you have to update/refresh your page too to see the update."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms",
+    "href": "posts/kobo-user-guide/index.html#why-first-namelast-name-columns-are-blank-in-the-appointment-or-distribution-forms",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Why first name/last name columns are blank in the appointment or distribution forms",
+    "text": "Why first name/last name columns are blank in the appointment or distribution forms\nSame as above; if you registered a guest in less than 5 minutes ago, and now trying to make an appointment or record a distribution for them, you won’t see their name pops up, and the name columns will be empty in the resulting form. There two ways to fix it:\n\nIf you just registered a guest, wait at least 5 minutes to schedule an appointment or record a distribution for that guest (after 5 minutes, you’ll have to refresh your page to get the get new guest data loaded)\nIf it’s a distribution, go to the guest table and note down the guest ID, then record a distribution by entering that noted guest ID and submit the form - you’ll see a reminder that says “Guest not found …” you can ignore that if you’re sure about guest ID. It’ll insert a record without those information, but later you can edit that form (by clicking on the pen icon in the table view), it’ll pull those information and update it."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#why-a-registered-guest-is-not-found-in-other-forms",
+    "href": "posts/kobo-user-guide/index.html#why-a-registered-guest-is-not-found-in-other-forms",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Why a registered guest is not found in other forms",
+    "text": "Why a registered guest is not found in other forms\nThere’s a 5 minutes delay the newly entered data to become accessible throughout other forms. If you just registered a guest, and you can find it in the Guest Table, but their ID doesn’t get recognized in the other forms (e.g. Distribution, Appointments), you need to give the system at least 5 minutes to load that data - and also, need to refresh your page after 5 minutes."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#why-i-cant-see-a-formtable",
+    "href": "posts/kobo-user-guide/index.html#why-i-cant-see-a-formtable",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Why I can’t see a form/table",
+    "text": "Why I can’t see a form/table\nIf you don’t see a table, form or project, it could be because of any of the following reasons:\n\nThe project is not shared with you\nYou’re not logged in - especially if you see a “Login” button on the top left side of your page. Database system may log you out after sometime with no activity\nMake sure you’re logged in with right user account/username\nFollow the instructions in Interface overview section"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#why-a-tab-is-disabled",
+    "href": "posts/kobo-user-guide/index.html#why-a-tab-is-disabled",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Why a tab is disabled",
+    "text": "Why a tab is disabled\nIf a tab (e.g. SETTINGS) shows as disabled (un-clickable), it means you don’t have the permission to access the content under that tab. Make sure you’re logged in with the right user account. Reach out to Admin if the issue is something else."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#what-could-happen-if-i-delete-something",
+    "href": "posts/kobo-user-guide/index.html#what-could-happen-if-i-delete-something",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "What could happen if I delete something",
+    "text": "What could happen if I delete something\n\nDeleting a record: Unfortunately, delete action is not reversible in this system. So please put extra care when you want to delete something. Even if you’ve the permission to delete, it’s recommended to ask Admin to do it.\nDeleting a form: …"
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#record-queued-for-submission",
+    "href": "posts/kobo-user-guide/index.html#record-queued-for-submission",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Record queued for submission",
+    "text": "Record queued for submission\nWhen you do data entry, it may happen to see messages like “Record queued for submission”. That means the form is working and capturing your data but due internet connection issue it can’t submit but queue instead, once the connection is available, it’ll send them to the database. There’s nothing to worry about this."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#data-protection",
+    "href": "posts/kobo-user-guide/index.html#data-protection",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Data Protection",
+    "text": "Data Protection\nThis database contains personal identifiable information, whoever granted access must be cautious keeping the credentials safe and avoid downloading the data into their private devices. We do not recommend saving the username/password in personal devices. Please communicate immediately with Outreach Leadership if you feel log-in username/password is leaked."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#account-responsibilities",
+    "href": "posts/kobo-user-guide/index.html#account-responsibilities",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Account responsibilities",
+    "text": "Account responsibilities\nTo maintain data security and accessibility, we’ve multiple kobo accounts with different accessibility levels. If you’re given a username/password to log-in, you’re responsible keeping it safe. Some account may not be able to delete a record, but still able to download and view identifiable information, so please put extra attention keeping the account credentials safe."
+  },
+  {
+    "objectID": "posts/kobo-user-guide/index.html#why-guest-not-found",
+    "href": "posts/kobo-user-guide/index.html#why-guest-not-found",
+    "title": "TUMC Outreach Database System User Manual",
+    "section": "Why Guest not found",
+    "text": "Why Guest not found\nThere could be multiple issues:\n\nMake sure Guest is registered in the Guest table and you’re able to find them there\nIf you can find Guest in the Guest table, but they system can’t pull their information in the other forms like Distribution or Appointments, there could be a few issues:\n\nWhether you just registered the Guest, and the system needs 5 minutes to sync up\nIf you’re sure 5 minutes is already over, then you need to refresh you browser page\nIf non of above, make sure the ID field doesn’t contain any space either before or after the ID"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "tumc-dm-manual",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "TUMC Dashboard System User Manual\n\n\n\n\n\n\ndashboard\n\n\n\n\n\n\n\n\n\nSep 21, 2025\n\n\nAmin Sherzad\n\n\n\n\n\n\n\n\n\n\n\n\nTUMC Outreach Database System User Manual\n\n\n\n\n\n\nkobo\n\n\n\n\n\n\n\n\n\nSep 21, 2025\n\n\nAmin Sherzad\n\n\n\n\n\n\nNo matching items"
   }
 ]
