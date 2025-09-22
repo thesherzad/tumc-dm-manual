@@ -2,9 +2,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About TUMC",
     "section": "",
-    "text": "About this blog"
+    "text": "This site provides user manual for Trinity United Methodist Church Database system and Dashboard."
   },
   {
     "objectID": "posts/kobo-user-guide/index.html",
@@ -182,9 +182,65 @@
     "text": "Why Guest not found\nThere could be multiple issues:\n\nMake sure Guest is registered in the Guest table and you’re able to find them there\nIf you can find Guest in the Guest table, but they system can’t pull their information in the other forms like Distribution or Appointments, there could be a few issues:\n\nWhether you just registered the Guest, and the system needs 5 minutes to sync up\nIf you’re sure 5 minutes is already over, then you need to refresh you browser page\nIf non of above, make sure the ID field doesn’t contain any space either before or after the ID"
   },
   {
+    "objectID": "posts/dashboard-user-guide/index.html",
+    "href": "posts/dashboard-user-guide/index.html",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "",
+    "text": "The purpose for the dashboard is to provide quick and near real time access to summaries and reports from the data in the database. Additionally, some tools to automate some tasks."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#home",
+    "href": "posts/dashboard-user-guide/index.html#home",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Home",
+    "text": "Home\nThis tab includes summaries and graphs representing from multiple datasets, including Households/Guests, Appointments, Distributions, ESOL and such."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#appointments",
+    "href": "posts/dashboard-user-guide/index.html#appointments",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Appointments",
+    "text": "Appointments\n\nAppointment Filters: you may use the available filters to subset or see specific appointments, or appointments for certain date (or a date ranges), and so on.\n\n\n\n\n\n\nTip\n\n\n\nIf you set a filter, it’ll affect all the visible graphs and tables under Appointment tabs.\nIf you want to download appointments for a certain service and a date range, you can apply both at the same time. E.g. Choose the desired date range, and then select the desired service. The resulting graph and table will be based on that filter.\n\n\nAppointment Calendar: it can be helpful to show you how many appointments you should expect for certain day, and time slot.\nAppointment Details: this table view is helpful if you want to download or view your desired appointments in more details, e.g. date, time slots and such."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#distributions",
+    "href": "posts/dashboard-user-guide/index.html#distributions",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Distributions",
+    "text": "Distributions\nUse the filter options to select your desired subset of distributions, e.g. for certain month or quarter or so. Or subset to see the details for a certain service, such as food or diaper.\nThe numbers are graphs will change based on the filters instantly."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#households",
+    "href": "posts/dashboard-user-guide/index.html#households",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Households",
+    "text": "Households\nThe term “Households” and “Guests” will be used interchangeably throughout this manual. Both of them point to the same table in the database. Under this tab, you’ll see filter options that you can use to filter to your desired subset of the data."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#volunteers",
+    "href": "posts/dashboard-user-guide/index.html#volunteers",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Volunteers",
+    "text": "Volunteers\nAs of now, we don’t have any data or practical use of it, but this space is to show summaries about volunteers availability.\nThe email section should work. It can be used to send emails to a group of volunteers. The purpose for this feature is automatically notify volunteers about their upcoming shift - but we don’t have such data yet.\n\n\n\n\n\n\nNote\n\n\n\nIt uses a non-official email address to send emails. So, when volunteers receive email, it’d be from a G-mail account. If you want to use this to send emails, make sure you include enough introduction."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#tools",
+    "href": "posts/dashboard-user-guide/index.html#tools",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Tools",
+    "text": "Tools\n\nDownload Filter Options: the filter options can be used to select a desired dataset and subset it by column and/or a date range. Note that, this filter option is only applicable on the subsequent data table.\nDataset Previous: it will show the resulting dataset from the defined filters.\nUpload Distribution Data to KOBO: this feature is to help with upload distribution data to kobo server. This feature is specifically designed for Tuesday distributions.\n\nInput: a csv file. Download the distribution google sheet as csv (the check boxes should convert to TRUE and FALSE)\nDistribution Date: choose the date of distribution\nWhen ready, click on the Upload button to submit the distributions record to kobo\n\n\n\n\n\n\n\nNote\n\n\n\nPlease note that the Upload button will disable after upload action is successful. That’s because to avoid accidental resubmit. If you really have multiple files to upload, you’ll need to refresh your page and restart the upload."
+  },
+  {
+    "objectID": "posts/dashboard-user-guide/index.html#triny",
+    "href": "posts/dashboard-user-guide/index.html#triny",
+    "title": "TUMC Dashboard System User Manual",
+    "section": "Triny",
+    "text": "Triny\nTriny is the nickname of the AI tool embedded in the dashboard. This tool is helpful to generate descriptive summaries from the available datasets that are not in the dashboard. It works the same way as public chatbot (e.g. ChatGPT) but this is aware of the available datasets and can summarize the datasets to answer your questions.\nIf you get to use this tool, you might find it way faster to generate summaries and get answers quickly to your questions.\n\nExample queries\n\nHow many appointments do we have tomorrow, and how many of them would need diaper and what sizes of diapers?\nHow many distributions we’ve had in the past week and how many kids benefited from these distributions.\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a paid service, if you’ve general question that are not related to datasets, it’s not recommended to use this tool.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nWhile the AI doesn’t have access to the database or data instead it generates and runs code to answer your query, but like any other public AI tool, this tool is not safe to share private or personal data, such as address, phone number, credit card and such."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "tumc-dm-manual",
+    "title": "TUMC Data Management Manual",
     "section": "",
     "text": "TUMC Dashboard System User Manual\n\n\n\n\n\n\ndashboard\n\n\n\n\n\n\n\n\n\nSep 21, 2025\n\n\nAmin Sherzad\n\n\n\n\n\n\n\n\n\n\n\n\nTUMC Outreach Database System User Manual\n\n\n\n\n\n\nkobo\n\n\n\n\n\n\n\n\n\nSep 21, 2025\n\n\nAmin Sherzad\n\n\n\n\n\n\nNo matching items"
   }
