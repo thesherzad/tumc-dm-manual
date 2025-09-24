@@ -186,14 +186,14 @@
     "href": "posts/dashboard-user-guide/index.html",
     "title": "TUMC Dashboard System User Manual",
     "section": "",
-    "text": "The purpose for the dashboard is to provide quick and near real time access to summaries and reports from the data in the database. Additionally, some tools to automate some tasks."
+    "text": "This user manual is to guide users on how to use TUMC Outreach Hub Dashboard. While it’s hosted publicly, but it’s intended to be used internally.\nThe purpose for the dashboard is to provide quick and real time access to summaries and reports from the data in the TUMC Outreach Hub Database. Additionally, it provides tools to automate some tasks."
   },
   {
     "objectID": "posts/dashboard-user-guide/index.html#home",
     "href": "posts/dashboard-user-guide/index.html#home",
     "title": "TUMC Dashboard System User Manual",
     "section": "Home",
-    "text": "Home\nThis tab includes summaries and graphs representing from multiple datasets, including Households/Guests, Appointments, Distributions, ESOL and such."
+    "text": "Home\nThis tab includes summaries and graphs representing from multiple datasets, including Households/Guests, Appointments, Distributions, ESOL and so on."
   },
   {
     "objectID": "posts/dashboard-user-guide/index.html#appointments",
@@ -207,7 +207,7 @@
     "href": "posts/dashboard-user-guide/index.html#distributions",
     "title": "TUMC Dashboard System User Manual",
     "section": "Distributions",
-    "text": "Distributions\nUse the filter options to select your desired subset of distributions, e.g. for certain month or quarter or so. Or subset to see the details for a certain service, such as food or diaper.\nThe numbers are graphs will change based on the filters instantly."
+    "text": "Distributions\nUse the filter options to select your desired subset of distributions, e.g. for certain month or quarter or so. Or subset to see the details for a certain service, such as food or diaper.\nThe numbers and graphs will change based on the filters instantly."
   },
   {
     "objectID": "posts/dashboard-user-guide/index.html#households",
@@ -228,7 +228,7 @@
     "href": "posts/dashboard-user-guide/index.html#tools",
     "title": "TUMC Dashboard System User Manual",
     "section": "Tools",
-    "text": "Tools\n\nDownload Filter Options: the filter options can be used to select a desired dataset and subset it by column and/or a date range. Note that, this filter option is only applicable on the subsequent data table.\nDataset Previous: it will show the resulting dataset from the defined filters.\nUpload Distribution Data to KOBO: this feature is to help with upload distribution data to kobo server. This feature is specifically designed for Tuesday distributions.\n\nInput: a csv file. Download the distribution google sheet as csv (the check boxes should convert to TRUE and FALSE)\nDistribution Date: choose the date of distribution\nWhen ready, click on the Upload button to submit the distributions record to kobo\n\n\n\n\n\n\n\nNote\n\n\n\nPlease note that the Upload button will disable after upload action is successful. That’s because to avoid accidental resubmit. If you really have multiple files to upload, you’ll need to refresh your page and restart the upload."
+    "text": "Tools\n\nDownload Filter Options: the filter options can be used to select your desired dataset and subset it by column and/or a date range. Note that, this filter option is only applicable on the subsequent data table.\nDataset Preview: it will show the resulting dataset from the defined filters.\nUpload Distribution Data to KOBO: this feature is to help with upload distribution data to kobo server. This feature is specifically designed for Tuesday distributions.\n\nInput: a csv file. Download the distribution google sheet as csv (the check boxes should convert to TRUE/FALSE). Below is an example header. Your csv file’s header must match this when you open it with MS Excel, you’ll get error otherwise.\n\n\nIt’s okay if the date in cell B1, and values in D3, E3 are different. But the rest must be identical. Coloring doesn’t matter.\n\nDistribution Date: choose the date of distribution\nWhen ready, click on the Upload button to submit the distributions record to kobo\n\n\n\n\n\n\n\nNote\n\n\n\nPlease note that the Upload button will disable after upload action is successful. That’s because to avoid accidental resubmit. If you really have multiple files to upload, you’ll need to refresh your page and restart the upload.\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nWarning! Once you hit the Upload button, it cannot be reversed! Please make sure everything is correct."
   },
   {
     "objectID": "posts/dashboard-user-guide/index.html#triny",

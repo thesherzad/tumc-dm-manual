@@ -161,6 +161,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example-queries" id="toc-example-queries" class="nav-link" data-scroll-target="#example-queries">Example queries</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#contacts" id="toc-contacts" class="nav-link" data-scroll-target="#contacts">Contacts</a></li>
   </ul>
 </nav>
     </div>
@@ -173,14 +174,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The purpose for the dashboard is to provide quick and near real time access to summaries and reports from the data in the database. Additionally, some tools to automate some tasks.</p>
+<p>This user manual is to guide users on how to use TUMC Outreach Hub Dashboard. While it’s hosted publicly, but it’s intended to be used internally.</p>
+<p>The purpose for the dashboard is to provide quick and real time access to summaries and reports from the data in the TUMC Outreach Hub Database. Additionally, it provides tools to automate some tasks.</p>
+<p><img src="images/clipboard-4181682346.png" class="img-fluid"></p>
 </section>
 <section id="getting-started" class="level1">
 <h1>Getting Started</h1>
 <ul>
-<li><p>Accessibility: the dashboard is web based app, at the time of writing this manual, it’s hosted on shinyapp.io, accessible via this <a href="https://maryliz.shinyapps.io/TUMC-Dashboard/">link</a>.</p></li>
-<li><p>Log-in: to use the dashboard, you need to have a pre-defined username and password. Admin can help with username and password. There’s no user based roles, that means any user who logs in, they’ll have access to the same features. So, only one username and password can be used by all authorized users.</p></li>
-<li><p>Log-out: at the right-bottom side of the screen, there’s a floating button, hover your mouse on it and you’ll see a log-out option.</p></li>
+<li><p>Accessibility: the dashboard is a web based app, access is restricted, but if you need to accesss it, reach out to Admin.</p></li>
+<li><p>Log-in: to use the dashboard, you need to have a pre-defined username and password. Admin can help with username and password. There’s no role based users, that means any user who logs in, they’ll have access to the same features. So, only one username and password can be used by all authorized users.</p></li>
+<li><p>Log-out: at the bottom right corner of the screen, there’s a floating button, hover your mouse on it and you’ll see a log-out option.</p></li>
 </ul>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -198,10 +201,10 @@ Important
 </section>
 <section id="interface-overview" class="level1">
 <h1>Interface Overview</h1>
-<p>Features is divided into multiple tabs for ease of finding and better user experience.</p>
+<p>Features are divided into multiple tabs for ease of finding and better user experience.</p>
 <section id="home" class="level2">
 <h2 class="anchored" data-anchor-id="home">Home</h2>
-<p>This tab includes summaries and graphs representing from multiple datasets, including Households/Guests, Appointments, Distributions, ESOL and such.</p>
+<p>This tab includes summaries and graphs representing from multiple datasets, including Households/Guests, Appointments, Distributions, ESOL and so on.</p>
 </section>
 <section id="appointments" class="level2">
 <h2 class="anchored" data-anchor-id="appointments">Appointments</h2>
@@ -228,7 +231,7 @@ Tip
 <section id="distributions" class="level2">
 <h2 class="anchored" data-anchor-id="distributions">Distributions</h2>
 <p>Use the filter options to select your desired subset of distributions, e.g.&nbsp;for certain month or quarter or so. Or subset to see the details for a certain service, such as food or diaper.</p>
-<p>The numbers are graphs will change based on the filters instantly.</p>
+<p>The numbers and graphs will change based on the filters instantly.</p>
 </section>
 <section id="households" class="level2">
 <h2 class="anchored" data-anchor-id="households">Households</h2>
@@ -255,13 +258,17 @@ Note
 <section id="tools" class="level2">
 <h2 class="anchored" data-anchor-id="tools">Tools</h2>
 <ul>
-<li><p>Download Filter Options: the filter options can be used to select a desired dataset and subset it by column and/or a date range. Note that, this filter option is only applicable on the subsequent data table.</p></li>
-<li><p>Dataset Previous: it will show the resulting dataset from the defined filters.</p></li>
+<li><p>Download Filter Options: the filter options can be used to select your desired dataset and subset it by column and/or a date range. Note that, this filter option is only applicable on the subsequent data table.</p></li>
+<li><p>Dataset Preview: it will show the resulting dataset from the defined filters.</p></li>
 <li><p>Upload Distribution Data to KOBO: this feature is to help with upload distribution data to kobo server. This feature is specifically designed for Tuesday distributions.</p>
 <ul>
-<li><p>Input: a csv file. Download the distribution google sheet as csv (the check boxes should convert to TRUE and FALSE)</p></li>
+<li><p>Input: a csv file. Download the distribution google sheet as csv (the check boxes should convert to TRUE/FALSE). Below is an example header. Your csv file’s header must match this when you open it with MS Excel, you’ll get error otherwise.</p>
+<p><img src="images/clipboard-3538457568.png" class="img-fluid"></p>
+<ul>
+<li>It’s okay if the date in cell B1, and values in D3, E3 are different. But the rest must be identical. Coloring doesn’t matter.</li>
+</ul></li>
 <li><p>Distribution Date: choose the date of distribution</p></li>
-<li><p>When ready, click on the Upload button to submit the distributions record to kobo</p></li>
+<li><p>When ready, click on the <strong>Upload</strong> button to submit the distributions record to kobo</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -277,6 +284,19 @@ Note
 </div>
 </div></li>
 </ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Warning! Once you hit the Upload button, it cannot be reversed! Please make sure everything is correct.</p>
+</div>
+</div>
 </section>
 <section id="triny" class="level2">
 <h2 class="anchored" data-anchor-id="triny">Triny</h2>
@@ -314,10 +334,14 @@ Warning
 <p>While the AI doesn’t have access to the database or data instead it generates and runs code to answer your query, but like any other public AI tool, this tool is not safe to share private or personal data, such as address, phone number, credit card and such.</p>
 </div>
 </div>
-
-
 </section>
 </section>
+</section>
+<section id="contacts" class="level1">
+<h1>Contacts</h1>
+<p>Reach out to TUMC Outreach hub for more information.</p>
+
+
 </section>
 
 </main> <!-- /main -->
